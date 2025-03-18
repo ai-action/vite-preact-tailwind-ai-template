@@ -18,7 +18,7 @@
     "ai": "4.1.61",
     "clsx": "2.1.1",
     "preact": "10.26.4",
-    "workers-ai-provider": "0.1.3"
+    "workers-ai-provider": "0.2.0"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "4.20250317.0",
