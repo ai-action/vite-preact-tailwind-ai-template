@@ -15,7 +15,7 @@
     "start": "run-p client server"
   },
   "dependencies": {
-    "ai": "4.3.13",
+    "ai": "4.3.15",
     "clsx": "2.1.1",
     "preact": "10.26.5",
     "workers-ai-provider": "0.3.0"
