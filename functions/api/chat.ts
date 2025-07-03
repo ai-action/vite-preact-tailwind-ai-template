@@ -11,7 +11,7 @@ const PROMPT: CoreMessage = {
   content: 'You are a succinct helpful assistant',
 } as const;
 
-const MAX_TOKENS = 1;
+const MAX_TOKENS = 150;
 
 /**
  * POST /api/chat
