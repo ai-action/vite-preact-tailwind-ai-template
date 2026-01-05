@@ -21,7 +21,7 @@
     "workers-ai-provider": "2.0.1"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "4.20260101.0",
+    "@cloudflare/workers-types": "4.20260103.0",
     "@commitlint/cli": "20.3.0",
     "@commitlint/config-conventional": "20.3.0",
     "@eslint/compat": "2.0.0",
