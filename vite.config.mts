@@ -1,15 +1,12 @@
+import { resolve } from 'node:path';
+
 import preact from '@preact/preset-vite';
-import { resolve } from 'path';
 import { defineConfig } from 'vite';
 
-/**
- * @see {@link https://vitejs.dev/config/}
- */
 export default defineConfig({
-  base: process.env.BASE || '',
   resolve: {
     alias: {
-      src: resolve(__dirname, 'src'),
+      src: resolve(import.meta.dirname, 'src'),
     },
   },
   plugins: [preact()],
