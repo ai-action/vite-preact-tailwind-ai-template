@@ -1,11 +1,9 @@
-import type { UseChatHelpers } from 'ai/react';
-
 import SubmitButton from './SubmitButton';
 
 interface Props {
-  isLoading: boolean;
-  onChange: UseChatHelpers['handleInputChange'];
-  onSubmit: UseChatHelpers['handleSubmit'];
+  disabled: boolean;
+  onChange: (value: string) => void;
+  onSubmit: (event: Event) => void;
   value: string;
 }
 
@@ -15,12 +13,13 @@ export default function Form(props: Props) {
       <input
         autocomplete="off"
         class="border-input flex h-9 w-full flex-1 rounded-md border bg-transparent px-3 py-1 text-base shadow-xs transition-colors focus-visible:border-blue-400 focus-visible:outline-hidden disabled:cursor-not-allowed disabled:opacity-50"
-        onInput={props.onChange}
+        disabled={props.disabled}
+        onInput={(event) => props.onChange(event.currentTarget.value)}
         placeholder="Type your message..."
         value={props.value}
       />
 
-      <SubmitButton disabled={props.isLoading} />
+      <SubmitButton disabled={props.disabled} />
     </form>
   );
 }

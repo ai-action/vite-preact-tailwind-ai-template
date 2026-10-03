@@ -23,3 +23,6 @@ jobs:
 
       - name: Run ESLint
         run: npm run lint
+
+      - name: Run TypeScript
+        run: npm run lint:tsc

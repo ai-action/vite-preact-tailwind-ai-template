@@ -1,10 +1,10 @@
 interface Props {
   error?: Error;
-  reload: () => void;
+  onRetry: () => void;
 }
 
 export default function ChatError(props: Props) {
-  const { error, reload } = props;
+  const { error, onRetry } = props;
 
   if (!error) {
     return null;
@@ -20,7 +20,7 @@ export default function ChatError(props: Props) {
       <button
         class="w-16 rounded-md bg-white px-4 py-2 text-sm font-medium text-black shadow-sm hover:bg-gray-50 focus-visible:ring-1 focus-visible:outline-hidden"
         type="button"
-        onClick={reload}
+        onClick={onRetry}
       >
         Retry
       </button>
