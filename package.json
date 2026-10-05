@@ -18,7 +18,7 @@
     "@ai-sdk/react": "4.0.130",
     "ai": "7.0.127",
     "clsx": "2.1.1",
-    "preact": "10.29.8",
+    "preact": "11.0.0",
     "workers-ai-provider": "4.0.0",
     "zod": "4.6.5"
   },
