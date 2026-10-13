@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@ai-sdk/react": "4.0.140",
-    "ai": "7.0.128",
+    "ai": "7.0.137",
     "clsx": "2.1.1",
     "preact": "11.0.1",
     "workers-ai-provider": "4.0.0",
