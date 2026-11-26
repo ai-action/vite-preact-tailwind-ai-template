@@ -15,7 +15,7 @@
     "start": "run-p client server"
   },
   "dependencies": {
-    "@ai-sdk/react": "4.0.183",
+    "@ai-sdk/react": "4.0.184",
     "ai": "7.0.179",
     "clsx": "2.1.1",
     "preact": "11.2.0",
